@@ -10,7 +10,7 @@
  .container__main-container {
     margin: 30px auto 0 auto;
     width: 90%;
-    height: 80vh;
+    height: 55vh;
     box-shadow: 0 0 700px 200px rgba(0, 0, 0, 9),inset 0 0 700px 200px rgba(0, 0, 0, 9);
   }
   .container__secciones{
