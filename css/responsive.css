@@ -1,0 +1,53 @@
+@media (max-width: 767px) {
+  .container__main {
+    flex-direction: column;
+    height: 100%;
+  }
+  .container__main-img {
+    width: 100%;
+    height: 60vh;
+  }
+  .container__main-container {
+    margin: 0 auto;
+    width: 90%;
+    height: 60vh;
+    
+  }
+  .container__secciones{
+  height: 100%;
+  width: 100%;
+  }.button__container{
+      width: 100%;
+      align-items: center;
+      flex-direction: column;
+  }.button{
+      margin: 10px;
+  }
+  .container__seccion-tarjeta{
+      width: 100%;
+      height: 350px;
+  }
+  .container__secciones-tarjetas{
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+  }
+  .navegacion{
+      display: none;
+  }
+  .container__main-title{
+    text-align: center;
+      font-size: 40px;
+  }
+  .container__main-title span{
+    text-align: center;
+    font-size: 25px;
+  }.titulo_container p{
+    text-align: center;
+      font-size: 22px;
+  }
+  .titulo_container{
+      width: 100%;
+      margin: 0;
+  }
+}
