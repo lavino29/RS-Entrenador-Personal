@@ -281,9 +281,10 @@ img{
 }
 
 /* SLIDER */
-.container__transformaciones{
+.container__transformaciones{   
     background-color: rgb(10, 10, 10);
 }.transformacion_titulo{
+  padding-top: 3rem;
     background-color: rgb(10, 10, 10);
 }
 .slider_transformacionen {
