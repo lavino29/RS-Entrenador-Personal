@@ -8,9 +8,9 @@
     height: 60vh;
   }
   .container__main-container {
-    margin: 0 auto;
+    margin: 30px auto 0 auto;
     width: 90%;
-    height: 60vh;
+    height: 80vh;
     
   }
   .container__secciones{
