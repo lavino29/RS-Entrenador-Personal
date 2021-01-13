@@ -433,7 +433,7 @@ footer span{
 #button{
     position: relative;
     z-index: 100;
-    
+    outline: none;
 }
 .header__mobile {
     display: none;
