@@ -314,3 +314,128 @@ img{
     width: 100%;
     height: 100%;
   }
+  .container__testimoniales > div{
+      background-color: rgb(5, 5, 5);
+  }
+  .container__testimoniales{
+      position: relative;
+      max-width: 100%;
+      
+
+  }
+
+.testimonios{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgbox img{
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.card_testimonios{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 2.5rem auto;
+    background-color: #111;
+    padding: 60px 40px;
+    text-align: center;
+    overflow: hidden;
+}
+.layer{
+position: absolute;
+top: calc(100% - 2px);
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(var(--azul-main),#e91ee3);
+z-index: 1;
+transition: all 0.5s;
+}
+.card_testimonios:hover .layer{
+    top: 0;
+}
+.detalles__testimonios p{
+    margin: 0;
+}
+.content__testimonios{
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+.detalles__testimonios{
+    font-size: 15px;
+}
+footer{
+    color: #fff;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer span{
+    color: gray;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+.container_contacto{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.container_contacto a i{
+    color: gray;
+    font-size: 25px;
+}
+
+.navegacion__mobile{
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+.navegacion__mobile ul{
+    transition: all 0.5s;
+    transform: translateY(-120%);
+    width: 90%;
+    height: 65%;
+    margin: 0 auto;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    list-style: none;
+    padding:0;
+}.navegacion__mobile li{
+    margin-top: 30px;
+}
+.navegacion__mobile a {
+    font-size: 30px;
+   
+   
+}
+.menu_activo{
+    transform: translateY(17%) !important;
+}
+.menu_activo2{
+    opacity: 1;
+}
+#button{
+    position: relative;
+    z-index: 100;
+    
+}
+.header__mobile {
+    display: none;
+    
+}

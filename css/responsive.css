@@ -50,4 +50,9 @@
       width: 100%;
       margin: 0;
   }
+  
+.header__mobile{
+  display: flex;
+  justify-content: flex-end;
+}
 }
