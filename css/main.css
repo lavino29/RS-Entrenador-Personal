@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 :root{
     --azul-main: #91d5F2;
 
@@ -14,8 +21,14 @@ img{
   
    background-color:  rgba(0, 0, 0, 0.9);
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
     height: 100vh;
 }
@@ -24,15 +37,23 @@ img{
     position: relative;
     z-index: 10;
     background-color: #050505;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+    
+        -ms-flex-pack: justify;
+    
+            justify-content: space-between;
     width: 100%;
     height: 80vh;  
  }
 .container__main-img{
-     object-fit: cover;
-     object-position: top;
+     -o-object-fit: cover;
+        object-fit: cover;
+     -o-object-position: top;
+        object-position: top;
     width: 40%;
     height: 100vh;
 }
@@ -43,7 +64,8 @@ img{
     width: 60%;
     border: 1px solid black;
     height: 100vh;
-    box-shadow: 0 0 1000px 300px rgba(0, 0, 0, 9),inset 0 0 1000px 300px rgba(0, 0, 0, 9);
+    -webkit-box-shadow: 0 0 1000px 300px rgba(0, 0, 0, 9),inset 0 0 1000px 300px rgba(0, 0, 0, 9);
+            box-shadow: 0 0 1000px 300px rgba(0, 0, 0, 9),inset 0 0 1000px 300px rgba(0, 0, 0, 9);
 
 }
 .container__main-title{
@@ -59,9 +81,16 @@ img{
     margin-top: 80px;
     width: 90%;
     height: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
    
 }
 .titulo_container p{
@@ -77,9 +106,13 @@ img{
     margin-top: 2rem;
     margin-right: 2rem;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+  
+        justify-content: space-around;
   
 }
 .navegacion__li a{
@@ -92,8 +125,12 @@ img{
 }
 .button__container{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
    line-height: 22px;
 }
 .button{
@@ -123,26 +160,52 @@ img{
 .button:hover {
     background: #2894ff;
     color: #101111;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
-    transition-delay: 0.85s;
+    -webkit-transition-delay: 0.85s;
+         -o-transition-delay: 0.85s;
+            transition-delay: 0.85s;
 }
 .button span:nth-child(1){
     left: 0;
     bottom: 0;
     width: 1px;
     height: 100%;
-    transform: scaleY(0);
-    transform-origin: top;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.25s;
+         -o-transition-delay: 0.25s;
+            transition-delay: 0.25s;
     
 }
 .button:hover span:nth-child(1){
   
-    transform: scaleY(1);
-    transform-origin: bottom;
+    -webkit-transform: scaleY(1);
+  
+        -ms-transform: scaleY(1);
+  
+            transform: scaleY(1);
+    -webkit-transform-origin: bottom;
+        -ms-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.25s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.25s;
+         -o-transition-delay: 0.25s;
+            transition-delay: 0.25s;
     
 }
 .button span:nth-child(2){
@@ -150,18 +213,40 @@ img{
     top: 0;
     height:1px;
     width: 100%;
-    transform: scaleY(0);
-    transform-origin: right;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.45s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.45s;
+         -o-transition-delay: 0.45s;
+            transition-delay: 0.45s;
     
 }
 .button:hover span:nth-child(2){
   
-    transform: scaleY(1);
-    transform-origin: left;
+    -webkit-transform: scaleY(1);
+  
+        -ms-transform: scaleY(1);
+  
+            transform: scaleY(1);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.45s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.45s;
+         -o-transition-delay: 0.45s;
+            transition-delay: 0.45s;
     
 }
 
@@ -170,18 +255,40 @@ img{
     top: 0;
     width:1px;
     height: 100%;
-    transform: scaleY(0);
-    transform-origin: top;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+            transform-origin: top;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.55s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.55s;
+         -o-transition-delay: 0.55s;
+            transition-delay: 0.55s;
     
 }
 .button:hover span:nth-child(3){
   
-    transform: scaleY(1);
-    transform-origin: botton;
+    -webkit-transform: scaleY(1);
+  
+        -ms-transform: scaleY(1);
+  
+            transform: scaleY(1);
+    -webkit-transform-origin: botton;
+        -ms-transform-origin: botton;
+            transform-origin: botton;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.55s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.55s;
+         -o-transition-delay: 0.55s;
+            transition-delay: 0.55s;
     
 }
 .button span:nth-child(4){
@@ -189,18 +296,40 @@ img{
     bottom: 0;
     height:1px;
     width: 100%;
-    transform: scaleY(0);
-    transform-origin: left;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.75s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.75s;
+         -o-transition-delay: 0.75s;
+            transition-delay: 0.75s;
     
 }
 .button:hover span:nth-child(4){
   
-    transform: scaleY(1);
-    transform-origin: right;
+    -webkit-transform: scaleY(1);
+  
+        -ms-transform: scaleY(1);
+  
+            transform: scaleY(1);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: -webkit-transform 0.25s;
+    -o-transition: transform 0.25s;
     transition: transform 0.25s;
-    transition-delay: 0.75s;
+    transition: transform 0.25s, -webkit-transform 0.25s;
+    -webkit-transition-delay: 0.75s;
+         -o-transition-delay: 0.75s;
+            transition-delay: 0.75s;
     
 }
 
@@ -208,10 +337,18 @@ img{
     width: 80%;
     height: 80%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+    
+        -ms-flex-pack: justify;
+    
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
   
 
@@ -220,16 +357,27 @@ img{
   position: absolute;
   width: 100%;
   height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    -o-transition: filter 0.5s;
     transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s;
 }
 .container__seccion-tarjeta{
     text-align: center;
     position: relative;
     margin-top: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-  align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
    width: 32.5%;
   height: 100%;
   
@@ -245,16 +393,27 @@ img{
 }
 .container__seccion-tarjeta:hover img{
    
-    filter: blur(1.2px);
+    -webkit-filter: blur(1.2px);
+   
+            filter: blur(1.2px);
 }
 .titulo_entrenamiento{
    
     text-align: center;
     height: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: white;
     position: relative;
     z-index: 11;
@@ -262,8 +421,12 @@ img{
 }
 
 .titulo_entrenamiento h1{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
     font-size: 30px;
     margin-top: 2rem;
@@ -325,8 +488,11 @@ img{
   }
 
 .testimonios{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .imgbox img{
     width: 100px;
@@ -349,8 +515,12 @@ top: calc(100% - 2px);
 left: 0;
 width: 100%;
 height: 100%;
+background: -webkit-gradient(linear,left top, left bottom,from(var(--azul-main)),to(#e91ee3));
+background: -o-linear-gradient(var(--azul-main),#e91ee3);
 background: linear-gradient(var(--azul-main),#e91ee3);
 z-index: 1;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
 transition: all 0.5s;
 }
 .card_testimonios:hover .layer{
@@ -370,10 +540,19 @@ transition: all 0.5s;
 footer{
     color: #fff;
     background: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -383,8 +562,11 @@ footer span{
     margin-bottom: 1rem;
 }
 .container_contacto{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 200px;
     text-align: center;
     margin-bottom: 1rem;
@@ -396,7 +578,13 @@ footer span{
 
 .navegacion__mobile{
     background: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
     opacity: 0;
+    -webkit-transform: translateY(-120%);
+        -ms-transform: translateY(-120%);
+            transform: translateY(-120%);
     text-align: center;
     width: 100%;
     height: 100%;
@@ -404,15 +592,26 @@ footer span{
     z-index: 10;
 }
 .navegacion__mobile ul{
-    transition: all 0.5s;
-    transform: translateY(-120%);
+    -webkit-transition: all 0.95s;
+    -o-transition: all 0.95s;
+    transition: all 0.95s;
+    -webkit-transform: translateY(-120%);
+        -ms-transform: translateY(-120%);
+            transform: translateY(-120%);
     width: 90%;
-    height: 65%;
+    height: 60%;
     margin: 0 auto;
     background: #111;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-radius: 5px;
     list-style: none;
     padding:0;
@@ -425,10 +624,15 @@ footer span{
    
 }
 .menu_activo{
-    transform: translateY(17%) !important;
+    -webkit-transform: translateY(17%) !important;
+        -ms-transform: translateY(17%) !important;
+            transform: translateY(17%) !important;
 }
 .menu_activo2{
     opacity: 1;
+    -webkit-transform: translateY(9%);
+        -ms-transform: translateY(9%);
+            transform: translateY(9%);
 }
 #button{
     position: relative;
@@ -436,6 +640,14 @@ footer span{
     outline: none;
 }
 .header__mobile {
-    display: none;
-    
+ 
+   display: none;
+ 
+}
+.barra{
+    width: 100%;
+    height: 58px;
+    background: rgb(29, 29, 29);
+    position: absolute;
+    z-index: 90;
 }
